@@ -24,7 +24,8 @@ module ThinReports
         
         # @private
         def Page
-          const_defined?(:Page) ? Page : Core::Page
+          # const_defined?(:Page) ? Page : Core::Page
+          Core::Page
         end
         
       private
